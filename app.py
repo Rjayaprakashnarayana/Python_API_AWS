@@ -128,4 +128,4 @@ def evaluate():
     return (render_template('out.html',medicines=medicines,disease_details=h,fname=name,adhaar=aadhaar,district=district,village=village,phone=phone,age=age,gender=gender))
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run('0.0.0.0',debug=True)
