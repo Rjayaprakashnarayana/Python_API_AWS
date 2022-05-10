@@ -43,6 +43,8 @@ def evaluate():
     inputtest =[l2]
     out = model.predict(inputtest)
     h = out[0]
+    for j in range(0,len(l1)):
+      l2[j]=0
     if (h=='Fungal infection'): 
      medicines='Fluconazole tab ,  if chronic - voriconazole tab (Fungal Infection)' 
     elif(h=='Allergy'): 
